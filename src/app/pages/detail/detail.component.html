@@ -1,0 +1,15 @@
+<app-header />
+@if (product) {
+  <div class="main">
+    <div class="image">
+      <img [src]="product.imageUrl" alt="{{ product.name }}" />
+    </div>
+    <div class="info">
+      <div>
+        <h2>{{ product.name }}</h2>
+      </div>
+      <p class="price">£{{ product.price }}</p>
+      <p class="desc">{{ product.description }}</p>
+    </div>
+  </div>
+}

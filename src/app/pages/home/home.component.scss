@@ -1,0 +1,33 @@
+.main-container {
+  display: flex;
+}
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.layout-grid-product {
+  width: 100%;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  .page-number {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}

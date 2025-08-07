@@ -1,0 +1,59 @@
+<nav class="header-nav">
+  <div class="top-banner">
+    <a class="signup-banner" href="#">SIGN UP & SAVE 10%</a>
+    <div class="header-actions">
+      <a href="#">Track Order</a>
+      <a href="#">Help</a>
+      <a href="#">My Account</a>
+      <span class="material-icons nav-icon" (click)="goToHome()" title="Home"
+        >home</span
+      >
+      <span class="material-icons nav-icon" (click)="goToCart()" title="Cart"
+        >shopping_cart</span
+      >
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-top">
+      <div class="logo" (click)="goToHome()">
+        <img src="assets/bd53669b-48fc-494b-a725-83966d945a70.svg"   alt="Logo" />
+      </div>
+
+      <div class="search-bar">
+        <span class="material-icons nav-icon" title="Cart">search</span>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="What can we help you find?"
+        />
+      </div>
+
+      <div class="promo-block">
+        <div class="right-logo">
+          <img
+            src="assets/dc91637d-3f73-47db-ae15-22ff6eafc0a7__1440X1116.avif"
+            alt="Promo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-item">Shop By Team</li>
+          <li class="nav-item">Shop By Driver</li>
+          <li class="nav-item">Men</li>
+          <li class="nav-item">Women</li>
+          <li class="nav-item">Kids</li>
+          <li class="nav-item">Headwear</li>
+          <li class="nav-item">Gifts & Accessories</li>
+          <li class="nav-item">Collectibles</li>
+          <li class="nav-item">Clearance</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</nav>

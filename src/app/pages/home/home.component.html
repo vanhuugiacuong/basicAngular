@@ -1,0 +1,30 @@
+<app-header />
+<div class="main-container">
+  <app-sidebar />
+  <main class="content">
+    <div class="content-header">
+      <div class="results-dropdown">
+        <div class="results-info" id="resultsDropdownToggle">
+          {{ productHome.length }} Items
+          <span class="material-icons" id="resultsDropdownArrow">expand_more</span>
+        </div>
+      </div>
+      <div class="results-info">
+        1 - {{ productHome.length }} of {{ productHome.length }}
+      </div>
+    </div>
+
+    <div class="layout-grid-product">
+      <div class="products-grid">
+        @for (product of productHome; track product.id) {
+        <app-card [product]="product"></app-card>
+        }
+      </div>
+    </div>
+    <div class="pagination">
+      <span class="material-icons" style="color: #666">arrow_left</span>
+      <span class="page-number">1</span>
+      <span class="material-icons" style="color: #666">arrow_right</span>
+    </div>
+  </main>
+</div>

@@ -1,0 +1,11 @@
+<div class="product-card" (click)="goToDetail(product.id)" style="cursor: pointer;">
+  <img [src]="product.imageUrl" alt="{{ product.name }}" />
+  <div class="product-detail">
+    <p>{{ product.name }}</p>
+    <br />
+    <p class="price">£{{ product.price }}</p>
+  </div>
+  <div class="product-actions">
+    <button class="add-to-cart-btn" (click)="addToCart(); $event.stopPropagation()">Add to Cart</button>
+  </div>
+</div>
