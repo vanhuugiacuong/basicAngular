@@ -1,15 +1,17 @@
 <app-header />
 @if (product) {
-  <div class="main">
-    <div class="image">
+  <div class="detail-container">
+    <div class="detail-image">
       <img [src]="product.imageUrl" alt="{{ product.name }}" />
     </div>
-    <div class="info">
-      <div>
-        <h2>{{ product.name }}</h2>
+    <div class="detail-info">
+      <h2 class="detail-title">{{ product.name }}</h2>
+      <p class="detail-price">£{{ product.price }}</p>
+      <p class="detail-desc">{{ product.description }}</p>
+      <div class="detail-actions">
+        <button class="buy-btn">Buy Now</button>
+        <button class="add-to-cart-btn" (click)="addToCart(product)">Add to Cart</button>
       </div>
-      <p class="price">£{{ product.price }}</p>
-      <p class="desc">{{ product.description }}</p>
     </div>
   </div>
 }

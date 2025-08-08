@@ -22,4 +22,9 @@ export class DetailComponent {
     this.product = this.productService.getProducts().find((p) => p.id === id);
     console.log('Product Details:', this.product);
   }
+
+  addToCart(product: ProductModel): void {
+    this.productService.addProductToCart(product);
+    console.log('Product added to cart:', product);
+  }
 }
