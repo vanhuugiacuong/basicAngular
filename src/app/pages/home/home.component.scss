@@ -1,9 +1,14 @@
 .main-container {
   display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 .content {
   flex: 1;
   padding: 2rem;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .content-header {
   display: flex;
